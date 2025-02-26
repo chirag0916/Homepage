@@ -1,0 +1,311 @@
+body {
+  font-style: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header-content{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container{
+  position: relative;
+  display: inline-block;
+}
+
+.image-text{
+  position:absolute;
+  top: 80%; /* Moves text to the vertical center */
+  left: 50%; /* Moves text to the horizontal center */
+  transform: translate(-50%, -50%); /* Centers text precisely */
+  color: white; /* Make text visible on dark backgrounds */
+  font-size: 36px;
+  font-weight: bold;
+  padding: 40px;
+  border-radius: 5px;
+  max-width: 80%;
+  white-space: nowrap;
+}
+
+.title-box{
+  background-color: white;
+  padding: 2px;
+  width: 400px;
+  height: 275px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.title{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px;
+  margin-top: 1cqi;
+  margin-left: 10px;
+}
+
+.paragraph{
+  font-size: 16px;
+  color: black;
+  margin: 0px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.icon-box{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 90px;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.profile-img {
+  width: 300px;
+  height: 325px;
+}
+
+.main {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.all-projects {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.project{
+  background-color: white;
+  padding: 2px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-icons {
+  width: 15px;
+  height: 15px;
+  margin-left: 4px;
+}
+
+.project-1-header{
+  height: 100px;
+  width: auto;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.project-title{
+  font-size: 16px;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.work-title {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  
+}
+
+.project-paragraph{
+  font-size: 14px;
+  color: black;
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.project-1-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.project-symbols{
+  margin-right: 10px;
+}
+
+.footer{
+  
+  display: flex;
+  justify-content: center;
+  color: white;
+  
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.contact p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.contact-header p {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.contact-me {
+  font-size: 24px;
+  margin: 0px;
+  margin-top: 10px;
+  
+}
+
+.contact-address{
+  margin-top: 20px;
+}
+
+.contact-icons {
+  width: 15px;
+  height: 15px;
+  
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-top: 10px;
+  padding: 0;
+}
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+.contact-img-section {
+  padding-left: 30px;
+}
+
+.contact-img {
+  width: 250px;
+  height: 250px;
+}
+
+/* Tablet design (1024px and smaller) */
+@media (max-width: 1024px){
+  .header-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-img{
+    width: 250px;
+    height: 275px;
+  }
+
+  .title-box{
+    width: 90%;
+    height: auto;
+  }
+
+  .all-projects{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .footer{
+  }
+}
+
+/* Mobile design (768px and smaller) */
+@media (max-width: 768px){
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-img { 
+    width: 200px;
+    height: 220px;
+  }
+
+  .title-box {
+    width: 200px;
+    padding: 10px;
+  }
+
+  .all-projects {
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .work-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+  }
+  
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-header, .contact-address, .contact-section {
+    width: 90%; /* Make content fit nicely */
+    max-width: 400px; /* Prevent overly wide content */
+  }
+
+  .contact-img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .contact-img-section {
+    padding: 20px 0; /* Add space between text and image */
+  }
+
+}
+
